@@ -15,7 +15,6 @@
 
     <build>
         <plugins>
-            <!-- Compiler plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -26,7 +25,6 @@
                 </configuration>
             </plugin>
 
-            <!-- Surefire plugin (test runner) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -35,44 +33,39 @@
                     <includes>
                         <include>**/*Test.java</include>
                     </includes>
-                    <!-- Adiciona geração de relatório JSON -->
-                    <systemPropertyVariables>
-                        <cucumber.options>--plugin json:target/cucumber.json</cucumber.options>
-                    </systemPropertyVariables>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
     <dependencies>
-        <!-- Cucumber core -->
+        <!-- Cucumber Core & JUnit Integration -->
         <dependency>
-            <groupId>info.cukes</groupId>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>1.2.5</version>
+            <version>7.15.0</version>
         </dependency>
-
-        <!-- Cucumber JUnit integration -->
         <dependency>
-            <groupId>info.cukes</groupId>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>1.2.5</version>
+            <version>7.15.0</version>
+            <scope>test</scope>
         </dependency>
 
         <!-- JUnit -->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <version>5.10.2</version>
+            <scope>test</scope>
         </dependency>
 
-        <!-- PicoContainer (dependency injection) -->
+        <!-- Optional: Dependency Injection (if using @Inject, etc.) -->
         <dependency>
-            <groupId>info.cukes</groupId>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-picocontainer</artifactId>
-            <version>1.2.4</version>
+            <version>7.15.0</version>
         </dependency>
     </dependencies>
-
 </project>
 
