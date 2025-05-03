@@ -9,32 +9,20 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
     <dependencies>
-        <!-- Dependência do Cucumber para Java (pacote moderno io.cucumber) -->
+        <!-- Cucumber + JUnit 5 -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>7.11.0</version> <!-- Versão mais recente -->
+            <version>7.11.0</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- Dependência do Cucumber para JUnit (para integração com JUnit) -->
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-spring</artifactId>
-            <version>7.11.0</version> <!-- Versão mais recente -->
-            <scope>test</scope>
-        </dependency>
-
-        <!-- Dependência do JUnit (necessária para rodar os testes com JUnit) -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.9.0</version> <!-- Atualização para versão mais recente -->
-            <scope>test</scope>
-        </dependency>
-
-        <!-- Dependência do JUnit para Cucumber com suporte a JUnit 5 -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit-platform-engine</artifactId>
@@ -42,41 +30,39 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Dependência do Selenium (se estiver utilizando o Selenium com Cucumber) -->
+        <!-- JUnit 5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.9.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.6.0</version> <!-- Atualização para versão mais recente -->
+            <version>4.6.0</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- Dependência do JUnit para rodar testes com Cucumber -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.9.0</version> <!-- Atualização para versão mais recente -->
-            <scope>test</scope>
-        </dependency>
-
     </dependencies>
 
     <build>
         <plugins>
-            <!-- Plugin do Maven para executar testes Cucumber -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version> <!-- Atualização para a versão mais recente -->
+                <version>3.0.0-M5</version>
                 <configuration>
+                    <useModulePath>false</useModulePath>
                     <includes>
                         <include>**/*Test.java</include>
+                        <include>**/*Tests.java</include>
+                        <include>**/*TestCase.java</include>
                     </includes>
-                    <parallel>methods</parallel>
-                    <useUnlimitedThreads>true</useUnlimitedThreads>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
 </project>
 
