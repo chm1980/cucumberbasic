@@ -14,6 +14,7 @@ public class Hook extends BaseUtil {
 
     public Hook(BaseUtil base) {
         this.base = base;
+        System.out.println("Hook class instantiated!"); // Adicione esta linha
     }
 
     @Before
@@ -33,4 +34,3 @@ public class Hook extends BaseUtil {
         System.out.println("Closing the browser : MOCK");
     }
 }
-

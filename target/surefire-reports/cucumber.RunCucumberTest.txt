@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: cucumber.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 52.14 s <<< FAILURE! - in cucumber.RunCucumberTest
-LoginFeature.Login with correct username and password  Time elapsed: 28.793 s  <<< ERROR!
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 17.041 s <<< FAILURE! - in cucumber.RunCucumberTest
+LoginFeature.Login with correct username and password  Time elapsed: 2.022 s  <<< ERROR!
 io.cucumber.junit.platform.engine.UndefinedStepException: 
 The step 'I navigate to the login page' and 3 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
@@ -46,7 +46,7 @@ public void i_should_see_the_userform_page() {
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-Examples.Example #1.1  Time elapsed: 0.145 s  <<< ERROR!
+Examples.Example #1.1  Time elapsed: 0.084 s  <<< ERROR!
 io.cucumber.junit.platform.engine.UndefinedStepException: 
 The step 'I navigate to the login page' and 3 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
@@ -86,7 +86,7 @@ public void i_should_see_the_userform_page() {
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-Examples.Example #1.2  Time elapsed: 0.143 s  <<< ERROR!
+Examples.Example #1.2  Time elapsed: 0.063 s  <<< ERROR!
 io.cucumber.junit.platform.engine.UndefinedStepException: 
 The step 'I navigate to the login page' and 3 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
@@ -126,7 +126,7 @@ public void i_should_see_the_userform_page() {
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-Examples.Example #1.3  Time elapsed: 0.115 s  <<< ERROR!
+Examples.Example #1.3  Time elapsed: 0.069 s  <<< ERROR!
 io.cucumber.junit.platform.engine.UndefinedStepException: 
 The step 'I navigate to the login page' and 3 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:

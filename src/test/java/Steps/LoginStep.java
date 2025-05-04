@@ -18,6 +18,7 @@ public class LoginStep extends BaseUtil {
 
     public LoginStep(BaseUtil base) {
         this.base = base;
+        System.out.println("LoginStep class instantiated!"); // Adicione esta linha
     }
 
     @Then("^I should see the userform page$")
@@ -62,4 +63,3 @@ public class LoginStep extends BaseUtil {
         }
     }
 }
-
