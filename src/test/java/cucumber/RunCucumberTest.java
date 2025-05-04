@@ -6,6 +6,6 @@ import org.junit.platform.suite.api.SelectClasspathResource;
 
 @Cucumber
 @Suite
-@SelectClasspathResource("classpath:resources/*.feature") // Certifique-se de que a pasta 'features' esteja em src/test/resources
+@SelectClasspathResource("classpath:resources/features") // Certifique-se de que a pasta 'features' esteja em src/test/resources
 public class RunCucumberTest {
 }

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: cucumber.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.143 s <<< FAILURE! - in cucumber.RunCucumberTest
-cucumber.RunCucumberTest  Time elapsed: 0.143 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.116 s <<< FAILURE! - in cucumber.RunCucumberTest
+cucumber.RunCucumberTest  Time elapsed: 0.116 s  <<< ERROR!
 org.junit.platform.suite.engine.NoTestsDiscoveredException: Suite [cucumber.RunCucumberTest] did not discover any tests
 	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
 	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
