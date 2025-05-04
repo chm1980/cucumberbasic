@@ -68,6 +68,7 @@
                         <configurationParameters>
                             cucumber.plugin=pretty,json:${project.build.directory}/cucumber-reports/cucumber.json
                             cucumber.glue=steps
+                            cucumber.options=--verbose --dry-run
                         </configurationParameters>
                     </properties>
                     <additionalClasspathElements>
@@ -100,11 +101,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-java</artifactId>
-        </dependency>
-
-        <dependency>
+            <groupId>io
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit-platform-engine</artifactId>
             <scope>test</scope>
