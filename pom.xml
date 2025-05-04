@@ -68,7 +68,6 @@
                         <configurationParameters>
                             cucumber.plugin=pretty,json:${project.build.directory}/cucumber-reports/cucumber.json
                             cucumber.glue=steps
-                            cucumber.options=--verbose --dry-run
                         </configurationParameters>
                     </properties>
                     <additionalClasspathElements>
