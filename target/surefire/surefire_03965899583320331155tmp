@@ -1,0 +1,5 @@
+#surefire_0
+#Sun May 04 10:02:54 BRT 2025
+basedir=/home/jenkins/workspace/SeleniumWithCucumberPipeline
+user.dir=/home/jenkins/workspace/SeleniumWithCucumberPipeline
+localRepository=/home/pi/.m2/repository
