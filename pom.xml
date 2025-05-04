@@ -59,8 +59,14 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <includes>
-                        <include>**/Test*.java</include>
+                        <include>**/RunCucumberTest.java</include>
                     </includes>
+                    <properties>
+                        <configurationParameters>
+                            cucumber.plugin=pretty,json:target/cucumber-reports/cucumber.json
+                            cucumber.glue=Steps
+                        </configurationParameters>
+                    </properties>
                 </configuration>
             </plugin>
             <plugin>
