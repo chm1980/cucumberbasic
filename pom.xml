@@ -67,8 +67,12 @@
                     <properties>
                         <configurationParameters>
                             cucumber.plugin=pretty,json:${project.build.directory}/cucumber-reports/cucumber.json
-                            cucumber.glue=steps </configurationParameters>
+                            cucumber.glue=steps
+                        </configurationParameters>
                     </properties>
+                    <additionalClasspathElements>
+                        <additionalClasspathElement>${project.basedir}/src/resources</additionalClasspathElement>
+                    </additionalClasspathElements>
                 </configuration>
             </plugin>
 
