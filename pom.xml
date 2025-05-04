@@ -101,7 +101,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>io
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit-platform-engine</artifactId>
             <scope>test</scope>
